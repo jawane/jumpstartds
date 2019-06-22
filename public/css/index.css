@@ -1,0 +1,61 @@
+.myfirstclass {
+  color: orange;
+  font-weight: bolder;
+  font-family: serif;
+  text-decoration: overline;
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 60px;
+  width: 120%;
+  border: 10px solid black;
+  padding: 30px;
+  position: relative;
+
+}
+
+.alignright {
+  text-align: center;
+
+}
+
+.weathermain {
+  width: 40%;
+
+}
+
+body {
+  background-color: #11014B;
+  color: white;
+  text-align: center;
+  font-family: Moonbold, sans-serif;
+  padding-top: 0.5rem;
+  font-size: 20px;
+}
+
+.button {
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid white;
+  font-family: Moonbold, sans-serif;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  color: #11014B;
+  background-color: white;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.inputContainer {
+  position: relative;
+  font-size: 15;
+}
