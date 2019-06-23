@@ -3,22 +3,24 @@ window.onload = function(){
   cityInput.addEventListener('keydown', function(e){
     if (e.keyCode === 13) {
       makeRequest();
-var cityInput = document.getElementById("cityInput");
-var button = document.getElementById("button")
-var apiKey ="81ffe2a8be9b2f5182d4dda75d4a7b23"
+    }
+  })
 
-button.addEventListener("click", makeRequest)
-}
+  button.addEventListener('click', makeRequest);
 
-function makeRequest() {
-  var weathermain = document.getElementById("weathermain")
-  var weatherdescription = document.getElementById("weatherdescription")
-  var weathertemperature = document.getElementById("weathertemperature")
-  var weatherhumidity = document.getElementById("weatherhumidity")
-  var weatherimage = document.getElementById("weatherimage")
+  function makeRequest() {
+    var weathermain = document.getElementById('weathermain')
+    var weatherdescription = document.getElementById('weatherdescription')
+    var weathertemperature = document.getElementById('weathertemperature')
+    var weatherhumidity = document.getElementById('weatherhumidity')
+    var weatherimage = document.getElementById('image')
+    var button = document.getElementById('button')
+    var title = document.getElementById('title')
+    var inputcontainer = document.getElementById('inputcontainer')
+    var cityInput = document.getElementById('cityInput')
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=" +cityInput.value +"&APPID=81ffe2a8be9b2f5182d4dda75d4a7b23", true);
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=" +cityInput.value +"&APPID=81ffe2a8be9b2f5182d4dda75d4a7b23", true);
   xhr.onload = function (e){
     if(xhr.readyState === 4){
       if(xhr.status === 200){
