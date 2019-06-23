@@ -1,5 +1,7 @@
 window.onload = function(){
 
+  var title = document.
+
   var message= document.getElementById("message");
   console.log(message);
 

@@ -2,46 +2,40 @@
 <html>
   <head>
       <link rel="stylesheet" href="/public/css/index.css" type="text/css">
-      <script src="/public/js/index.js"></script>"
-      <script src="/public/js/app.js"></script>"
-
+      <script src="/public/js/app.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/public/css/index.css" type="text/css">
+      <script src="/public/js/app.js"></script>
   </head>
     <body>
-
-    <h1 class="title" style="color: red; font-size: 35px;" id="title">Weathering heights</h1>
+          <br>
+    <h1 class="title" style="color: purple;font: sans serif; font-size: 50px"; id="title">Weathernow</h1>
+          <br>
         <div class="inputContainer" id="inputContainer">
-            <input type="text" name="city" class="cityInput" placeholder="enter a city">
-        <br>
-        <div class="button" id="button">Show me the weather!</div>
-      <br>
-        <div style="color" yellow; id="weathermain">Sunny</div>
-      <br>
-        <div class="image">
-          <img class="weathermain" style=" align-items: left;" src="../../assets/images/clear.png" id="image" />
+            <input type="text" name="city" class="cityInput" placeholder="enter a city" id="cityInput"/>
         </div>
-      <br>
-        <div style="color" grey; id="weathermain">Cloudy</div>
-      <br>
-        <div class="image">
-          <img class="weathermain" src="../../assets/images/cloudy.png" id="image"/>
+          <br>
+        <div class="btn-danger" id="button">Show me the weather!
         </div>
-      <br>
-        <div id="weathermain">Rainy</div>
-      <br>
-        </div class="image">
-          <img class="weathermain" src="../../assets/images/rain.png" id="image"/>
+          <br>
+        <div class ="weather weatherdescription" id="weatherdescription">Clear skies
         </div>
-    <br>
+        <div class ="weather weathertemperature" id="weathertemperature">
+        </div>
+        <div class ="weather weatherhumidty" id="weatherhumidity">
+        </div>
+        <div class="weatherimage"><img src="../../assets/images/clear.png" height="125px" width="125px" id="weatherimage"></div>
+          <br>
         <div class="myfirstclass" id="button">Show me the weather!
         </div>
-    <br>
-        <div class="jumpstart" id="message">do something!
+          <br>
+        <div class="jumpstart" id="message">Don't trust us? Check the Met...
         </div>
-    <br>
-    <a href="#" onClick="window.open('http://www.metoffice.gov.uk', '_blank')">test</a>"
-    </a>
+          <br>
+    <a href="#" onClick="window.open('http://www.metoffice.gov.uk', '_blank')">MET</a>
     </body>
-
-<p></p>
 
 </html>
